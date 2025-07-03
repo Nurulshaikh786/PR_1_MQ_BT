@@ -3,11 +3,12 @@
 
 ----------------------------------------#INSPIRED BY#--------------------------------------------------
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/e904a3ad-a7d9-4e5e-a5b6-e1238d7de87a)
 
 
 
-[REAL ](https://preview.colorlib.com/theme/oakberry/#)
+
+[REAL WEB SITE LINK...](https://preview.colorlib.com/theme/oakberry/#)
 
 
 --------------------------------------------------------------------------------------------------------
@@ -15,11 +16,12 @@
 
 --------------------------------------------#OUTPT#------------------------------------------------------
 
-![alt text](image-1.png)
+![image-1](https://github.com/user-attachments/assets/49ba4c88-3119-4b0a-a278-5215abc42ec6)
 
 
 
-[CREATED BY ME](http://127.0.0.1:5500/index.html)
+
+[CREATED BY ME...](http://127.0.0.1:5500/index.html)
 
 
 
