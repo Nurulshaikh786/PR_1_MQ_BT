@@ -1,275 +1,262 @@
 :root {
-    --theme-green: #5EA51D;
-    --theme-bg: #F7F7F7;
-    --theme-detail: #00000099;
-    --theme-text-red: #fd5c64;
+  --theme-green: #5ea51d;
+  --theme-bg: #f7f7f7;
+  --theme-detail: #00000099;
+  --theme-text-red: #fd5c64;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html body {
-    font-family: 'Nunito';
-    background: var(--theme-bg);
-
+  font-family: "Nunito";
+  background: var(--theme-bg);
 }
 
 .container {
-    max-width: 1320px;
-    padding: 0 15px;
-    margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 ul {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
-    width: 100%;
-    padding: 15px;
+  max-width: 100%;
+  padding: 15px;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .justify-content-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .justify-content-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .align-items-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .align-items-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .text-align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .position-relative {
-    position: relative;
+  position: relative;
 }
 
 .position-absolute {
-    position: absolute;
+  position: absolute;
 }
 
+/* heading start */
 
-
-/* header start */
-.heading {
-    padding: 50px;
-
+.our-properties .heading {
+  justify-content: center;
+  margin-top: 100px;
 }
 
-.heading h2 {
-    color: var(--theme-green);
-    font-size: 13px;
-    font-weight: 700;
-    margin: 5px;
-
+.our-properties .heading h1 {
+  color: var(--theme-green);
+  font-size: 13px;
+  font-weight: 700;
+  margin: 5px;
 }
 
-.heading h3 {
-    font-size: 50px;
-    font-weight: bolder;
-    color: #313131;
+.our-properties .heading h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #313131;
+}
+/* heading start */
+
+.our-properties-content .card a {
+  transition: all 0.3s ease;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
 }
 
-
-
-/* header start */
-
-.box {
-
-    box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.24);
-    position: relative;
-    margin-top: 200px 0;
-    padding-bottom: 30px;
-    transition: all 0.3s ease;
-
+.our-properties-content .card {
+  box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.24);
+  position: relative;
+  margin-top: 100px;
+  transition: all 0.3s ease;
 }
 
-.box .image span {
-    background-color: var(--theme-green);
-    top: 80%;
-    margin-left: 25px;
-    color: var(--theme-bg);
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 999;
- 
-
+.our-properties-content .card .img-part span , .price-span{
+  background-color: var(--theme-green);
+  bottom: 0;
+  left: 0;
+  margin: 25px;
+  color: var(--theme-bg);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 999;
 }
-.box .image .price-underline{
-    text-decoration: line-through;
-    position: absolute;
-    z-index: 2;
-    margin-left: 25px;
-   
-
-} 
-
-.box .image img {
-    height: 250px;
-    width: 100%;
+.our-properties-content .card .img-part .price-span{
+  left: 30%;
 }
-
-.box .image .overl {
-    background-color: black;
-    z-index: 1;
-    width: 100%;
-    height: 250px;
-    top: 0;
-    opacity: 0.2;
-    transition: all 0.3s ease;
-}
-.box:hover .overl {
-    opacity: 0;
-}
-.box:hover {
-    box-shadow:  0px 5px 39px -14px rgba(0, 0, 0, 0.26);
+.our-properties-content .card .price-underline {
+  text-decoration: line-through;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--theme-green);
+  color:#ffffff4d;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  bottom: 0;
+  margin: 25px;
 }
 
-.box .sec-content .profile-img {
-    width: 36px;
-    height: 36px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-top: 5px;
-    background-position: center;
-    background-size: cover;
-
-
+.our-properties-content .card .img-part a {
+  height: 250px;
+  width: 100%;
+  position: relative;
 }
 
-.box .sec-content h3 {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--theme-detail);
-
+.card .img-part .overl {
+  background-color: black;
+  z-index: 1;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+.card:hover .overl {
+  opacity: 0;
+}
+.card:hover {
+  box-shadow: 0px 5px 39px -14px rgba(0, 0, 0, 0.26);
 }
 
-.box .sec-content span {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--theme-detail);
-    
-
+.our-properties-content .card .detail-part .profile img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.our-properties-content .card .detail-part {
+  padding: 25px;
+}
+.our-properties-content .card .detail-part .profile {
+  margin-bottom: 10px;
 }
 
-.sec-content {
-    padding: 25px 25px 15px 25px;
-    transition: all 0.3s ease;
+.our-properties-content .card .detail-part p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--theme-detail);
 }
 
-
-
-.box .property-info p {
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-    padding: 5px;
-    padding-left: 25px;
-    letter-spacing: 1px;
+.our-properties-content .card .property-info p {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
-.box .property-info i {
-    font-size: 12px;
-    color: var(--theme-detail);
-
+.our-properties-content .card .property-info .sale h3 {
+  color: var(--theme-detail);
+  font-size: 13px;
+}
+.our-properties-content .card .property-info .sale {
+  margin-bottom: 20px;
 }
 
-.box .property-info .sale p {
-    color: var(--theme-detail);
-    font-size: 12px;
-    padding-left: 5px;
+.our-properties-content .card .property-info .sale span {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(250, 249, 249);
+  margin-left: 15px;
+  letter-spacing: 1px;
+  padding: 1px 2px;
+  background-color: var(--theme-green);
+  text-align: center;
 }
 
-.box .property-info .sale {
-    padding-left: 25px;
+.our-properties-content .card .sale .rent {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(255, 253, 253);
+  margin-left: 20px;
+  letter-spacing: 1px;
+  padding: 1px 2px;
+  background-color: var(--theme-text-red);
+  text-align: center;
 }
 
-.box .property-info .sale span {
-    font-size: 12px;
-    font-weight: 300;
-    color: rgb(250, 249, 249);
-    margin-left: 15px;
-    letter-spacing: 1px;
-     padding: 1px 2px;
-    background-color: var(--theme-green);
-    text-align: center;
+.our-properties-content .card .icons {
+  margin-top: 10px;
 }
 
-.box .property-info .sale  .rent {
-    font-size: 12px;
-    font-weight: 300;
-    color: rgb(255, 253, 253);
-    margin-left: 20px;
-    letter-spacing: 1px;
-    padding: 1px 2px;
-    background-color: var(--theme-text-red);
-    text-align: center;
-}
+.our-properties-content .card .icons img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 
-.box .icons {
-    margin-top: 10px;
-    padding-left: 15px;
+  margin-right: 10px;
+  opacity: 0.5;
 }
-
-.box .icons img {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    opacity: .5;
+.our-properties-content .card .icons span {
+  color: var(--theme-detail);
+  margin-right: 10px;
 }
-
 .box .icons :nth-child(5) {
-    opacity: .3;
+  opacity: 0.3;
 }
